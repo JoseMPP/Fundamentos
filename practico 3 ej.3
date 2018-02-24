@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void main (){
+	float p1,p2,p3,pt,ef,pf,efp,pfp,nf,ppf=0.4,pp=0.2;//p1..pn son parciales,pt es suma total de parciales con ponderacion,ef es examen final,pf proyecto final,efp examen f con ponderacion,pfp proyecto f con pond.,nf nota final,ppf y pp son ponderaciones
+	cout<<"Inserte por separado la nota de los examenes parciales";
+	cin>>p1;
+	cin>>p2;
+	cin>>p3;
+	cout<<"Inserte la nota del examen final";
+	cin>>ef;
+	cout<<"Inserte la nota del proyecto final";
+	cin>>pf;
+	pt=((p1+p2+p3)/(3))*(ppf);
+	efp=ef*ppf;
+	pfp=pf*pp;
+	nf=pt+efp+pfp;
+	cout<<"La nota final del alumno es:"<<nf<<endl;
+	getch();
+
+}
