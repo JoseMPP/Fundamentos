@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main (){
+	float hpm,pph,iva=0.13,sb,sn;
+	cout<<"Ingrese las horas que trabajo el empleado en un mes:";
+	cin>>hpm;
+	cout<<"Ingrese el precio por hora trabajada:";
+	cin>>pph;
+	sb=hpm*pph;
+	if(sb>8272){
+		sn=(sb)-(sb*iva);
+		cout<<"EL salario neto del empleado es:"<<sn<<endl;
+	}
+	else
+		cout<<"EL salario neto del empleado es:"<<sb<<endl;
+	getch();
+}
